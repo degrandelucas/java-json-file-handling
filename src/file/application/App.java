@@ -4,6 +4,7 @@ package file.application;/* 1- Crie um programa em Java que escreva a seguinte m
 4 - Defina uma classe chamada Veiculo com os atributos necessários. Em seguida, crie um programa que instancia um objeto Veiculo, serializa esse objeto para JSON usando a biblioteca Gson e imprime o resultado.*/
 
 import com.google.gson.Gson;
+import file.connection.JasonTitulo;
 import file.models.Titulo;
 
 import java.io.FileWriter;
@@ -26,7 +27,11 @@ public class App {
         titulos.add(titulo1);
         titulos.add(titulo2);
 
-        String json = titulos
+        System.out.println(titulos);
+
+       // String jason = JasonTitulo.toJson((java.awt.List) titulos);
+
+        //System.out.println(jason);
 
     }
 }

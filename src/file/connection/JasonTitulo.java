@@ -10,11 +10,7 @@ public class JasonTitulo {
 
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public static String toJson(List<Titulo> titulos) {
-        return gson.toJson(titulos);
+    public static String toJson(List list) {
+        return gson.toJson(list);
     }
-}
-
-
-
 }
