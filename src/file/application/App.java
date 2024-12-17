@@ -29,8 +29,8 @@ public class App {
 
         System.out.println(titulos);
 
-        String generatedJson = JasonGeral.conversionToJson(titulos);
-        System.out.println(generatedJson);
+        String jsonTitulos = JasonGeral.conversionToJson(titulos);
+        System.out.println(jsonTitulos);
 
         // 4 - Exercicio
         Cars carro1 = new Cars("HB20", 2024);
@@ -42,7 +42,7 @@ public class App {
 
         System.out.println(carros);
 
-        String generatedJson = JasonGeral.conversionToJson(titulos);
-        System.out.println(generatedJson);
+        String jsonCars = JasonGeral.conversionToJson(carros);
+        System.out.println(jsonCars);
     }
 }
