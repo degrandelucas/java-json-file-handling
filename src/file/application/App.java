@@ -5,6 +5,7 @@ package file.application;
 4 - Defina uma classe chamada Veiculo com os atributos necessários. Em seguida, crie um programa que instancia um objeto Veiculo, serializa esse objeto para JSON usando a biblioteca Gson e imprime o resultado.*/
 
 import file.connection.JasonGeral;
+import file.models.Cars;
 import file.models.Titulo;
 
 import java.io.IOException;
@@ -31,5 +32,17 @@ public class App {
         String generatedJson = JasonGeral.conversionToJson(titulos);
         System.out.println(generatedJson);
 
+        // 4 - Exercicio
+        Cars carro1 = new Cars("HB20", 2024);
+        Cars carro2 = new Cars("Creta", 2022);
+
+        List<Cars> carros = new ArrayList<>();
+        carros.add(carro1);
+        carros.add(carro2);
+
+        System.out.println(carros);
+
+        String generatedJson = JasonGeral.conversionToJson(titulos);
+        System.out.println(generatedJson);
     }
 }
