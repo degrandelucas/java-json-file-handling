@@ -8,6 +8,7 @@ import file.connection.JasonGeral;
 import file.models.Cars;
 import file.models.Titulo;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,5 +45,9 @@ public class App {
 
         String jsonCars = JasonGeral.conversionToJson(carros);
         System.out.println(jsonCars);
+
+        FileWriter fileCars = new FileWriter("arquivoCars.xml");
+        fileCars.write(jsonCars);
+        fileCars.close();
     }
 }
