@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder;
 
 import java.util.List;
 
-public class JasonGeral {
+public class JasonGeral  {
 
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
